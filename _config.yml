@@ -1,0 +1,64 @@
+# Site settings
+description: An index of ROS Robots
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://robots.ros.org" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: ROS Robots
+email: ros@osrfoundation.org
+twitter_username: rosorg
+github_username:  ros
+gplus_username:  rosorg
+disqus_username: lorem_ipsum
+
+featured_robot: TurtleBot3
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# If adding a category give it a theme color too in _theme-colors.sty
+top_level_categories:
+  - title: Aerial
+    url: aerial
+    image: aerial.png
+  - title: Component
+    url: component
+    image: component.png
+  - title: Ground
+    url: ground
+    image: ground.png
+  - title: Marine
+    url: marine
+    image: marine.png
+  - title: Sensor
+    url: sensor
+    image: sensor.png
+
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: All
+    url: /all
+  - title: Tags
+    url: /tags
+  - title: About
+    url: /about
+  - title: Contributing
+    url: /contributing
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules', 'template_post.em']
